@@ -7,6 +7,7 @@ import Header from  './components/header/header-component';
 import Test1 from './components/test-component';
 import HatsPage from './pages/hatspage/hatspage-component' ;
 import ShopPage from './pages/shop/shop-component' ;
+import SignInSignUpPage from './pages/sign-in-sign-up/sign-in-sign-up-component.js'
 function App() {
   return (
 <div>
@@ -14,9 +15,10 @@ function App() {
 <Switch>
 
     <Route exact path='/' component={HomePage}/>
-    <Route exact path='/hats' component={HatsPage}/>
-        <Route exact path='/test' component={Test1} />
-        <Route exact path='/shop' component={ShopPage} />
+    <Route  path='/hats' component={HatsPage}/>
+        <Route  path='/test' component={Test1} />
+        <Route  path='/shop' component={ShopPage} />
+        <Route  path='/signin' component={SignInSignUpPage} />
 </Switch>
 
       </div>
